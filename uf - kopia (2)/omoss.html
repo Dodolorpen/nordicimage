@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="se">
+<head>
+<title>Nordic Image UF</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" type="image/png" href="bilder/Icondark.svg"/>
+<style>
+body {
+	margin: 0;
+	font-family: calibri;
+	background-color: #ffffff;
+}
+
+@font-face {
+  font-family: cinzelbold;
+  src: url(fonter/Cinzel-Bold.ttf);
+}
+
+@font-face {
+  font-family: cinzelregular;
+  src: url(fonter/Cinzel-Regular.ttf);
+}
+
+@font-face {
+  font-family: test4;
+  src: url(fonter/Roboto/Roboto-Light.ttf);
+}
+
+.mySlides{
+	display: none
+}
+
+
+.slideshow-container {
+  width: 				100%;
+  position: 			relative;
+  background:			#3becd8;
+}
+
+.slideshow-container img {
+	vertical-align: 	middle;
+	opacity:			0.5;
+}
+
+
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 1%;
+  color: white;
+  font-size: 30px;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 1%;
+  color: white;
+  font-size: 30px;
+  user-select: none;
+}
+
+.text {
+  color: #181329;
+  font-size: 2vw;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 20%;
+  margin:0;
+  padding:0;
+}
+
+.dot {
+	cursor: pointer;
+	height: 20px;
+	width: 20px;
+	background-color: #181329;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.3s;
+	position: relative;
+	bottom:40px;
+	transition: 0.3s;
+	margin: 0 5px 0 5px;
+}
+
+.active {
+	background-color:  #3becd8;
+}
+
+.dot:hover {
+	transform:	scale(1.2);
+}
+
+.slide {
+  -webkit-animation-name: slide;
+  -webkit-animation-duration: 1s;
+  animation-name: slide;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes slide {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes slide {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.allt{
+	display: flex;
+	width:90%;
+	margin-left:5%;
+	margin-top: 3%;
+}
+
+@media screen and (max-width: 1024px) {
+	.allt {
+		flex-direction:column;
+	}
+}
+
+.column.l {
+	margin:10px;
+	padding:0;
+	text-align: center;
+	background-color: white;
+	flex:60%;
+	transition: transform .4s;
+	transition: 0.4s;
+}
+
+.column.l:hover {
+	letter-spacing:		3px;
+	cursor: 			pointer;
+	transform: 			scale(1.1);
+}
+
+.column.l p{
+	font-size: 			1.7vw;
+	margin-top:			0;
+	font-family: 		"test4";
+	font-weight: 		bold;
+	color:				#181329;
+}
+
+.column.l h3{
+    font-size:3vw;
+	margin-bottom: 1%;
+	margin-top: 1%;
+	font-family: 		"test4";
+}
+
+.navbar {
+	margin:				0;
+	padding:			5px;
+    background-color: 	#ffffff;
+	position: 			sticky;
+	position: 			-webkit-sticky;
+	top: 				0px;
+	opacity:			1;
+	z-index:			1;
+	transition: 		0.4s;
+	width: 				100%;
+	float:				right;
+	color:				#181329;
+	border-bottom: 		2px solid #cccccc;
+}
+
+.navbar a {
+    display:			inline-block;
+    text-align:			center;
+    padding:			0.85vw 1vw;
+    text-decoration:	none;
+    font-size: 			1.5vw;
+	transition: 		0.4s;
+	font-family: 		"cinzelregular";
+	border-right: 		0px solid #444444;
+	margin-top:			0.35vw;
+	font-weight: 		bold;
+	margin-bottom:		0.35vw;
+	float:				right;
+}
+
+.navbar img {
+	height:4vw;
+}
+
+@media screen and (max-width: 1440px) {
+	.navbar a {
+		font-size: 		2vw;
+	}
+	.navbar img {
+		height:4vw;
+	}
+    .column.l h3{
+		font-size: 	4vw;
+	}  	
+	.column.l p{
+		font-size:	1.7vw;
+	}
+	.header {
+		height: 25vw;
+		font-size: 6vw;
+	}
+	.footer a {
+		font-size:3vw;
+	}
+	.footer p {
+		font-size:3vw;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.navbar a {
+		font-size: 	3vw;
+	}
+	.navbar img {
+		height:5vw;
+	}
+	.column.l h3{
+		font-size: 	6vw;
+	}
+	.column.l p{
+		font-size:	3vw;
+	}
+	.header {
+		height: 25vw;
+		font-size: 7vw;
+	}
+	.footer a {
+		font-size:4vw;
+	}
+	.footer p {
+		font-size:4vw;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.navbar a {
+		font-size: 		4vw;
+	}
+	.navbar img {
+		height:6vw;
+	}
+    .column.l h3{
+		font-size: 	8vw;
+	}  	
+	.column.l p{
+		font-size:	4vw;
+	}
+	.header {
+		height: 25vw;
+		font-size: 9vw;
+	}
+	.footer a {
+		font-size:5vw;
+	}	
+	.footer p {
+		font-size:5vw;
+	}
+}
+
+.navbar a:hover {
+    color: 				#cccccc;
+	letter-spacing:		3px;
+	cursor: 			pointer;
+}
+
+.all {
+    min-height: calc(100vh);
+}
+
+.image {
+	transition: 		transform 0.4s;
+}
+
+.image:hover {
+	transform: 				scale(1.03);
+	-ms-transform: 			scale(1.03); 
+	-webkit-transform: 		scale(1.03); 
+}
+
+.footer {
+    background-color: 	#ffffff;
+	font-size: 			2vw;
+	padding: 			15px;
+	padding-top:		20px;
+	margin-top:			3%;
+	z-index:			1;
+	border-top: 		1px solid #444444;
+	max-height:			50px;
+	font-weight:bold;
+}
+
+.footer p{
+    color:				black;
+	font-family: 		"test4";
+	transition: 		0.3s;
+	padding: 0px;
+	madding: 0px;
+	display: inline-block;
+	padding-top:0;
+	margin-top:0;
+}
+
+.footer img{
+	width: 				auto;
+	height: 			50px;
+	vertical-align:		middle;
+	margin-right:		1%;
+	margin-top:			-15px;
+}
+
+@media screen and (max-width: 480px) {
+	.footer img{
+		height:30px;
+	}
+}
+
+.footer a {
+	padding-right:10px;
+	padding-left:10px;
+	color:black;
+	text-decoration: 	none;
+	transition: 		0.3s;
+	border-right:1px solid #444444;
+	font-family: "test4";
+}
+
+.footer p:hover {
+	letter-spacing:		1px;
+}
+
+.footer a:hover {
+	letter-spacing:		1px;
+}
+</style>
+
+<script src="https://kit.fontawesome.com/1f4481692f.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div class="all">
+
+	<div class="navbar" id="navbar">
+            <a href="omoss.html" style="color:#3becd8;">Om oss <i class="fas">&#xf0c0;</i></a>
+			<a href="funktioner.html" >Produkter <i class="fas">&#xf49e;</i></a>
+			<a href="index.html" >Hem <i class="fas">&#xf015;</i></a>
+			<img src="bilder/Icondark.svg" style="float:left;margin:0.1%;margin-left:10px;"><img src="bilder/Worddark.svg" style="float:left;margin:0.1%;">
+	</div>
+	
+	<div class="slideshow-container">
+				<div class="mySlides slide">
+				<img src="bilder/norrlanddd.jpg" style="width:100%">
+				<div class="text">yoyoyo</div>
+				</div>
+				
+				<div class="mySlides slide">
+				<img src="bilder/sddd.jpg" style="width:100%">
+				<div class="text">yoyoyo</div>
+				</div>
+				
+				<div class="mySlides slide">
+				<img src="bilder/sdd.jpg" style="width:100%">
+				<div class="text">yoyoyo</div>
+				</div>
+
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span> 
+				<span class="dot" onclick="currentSlide(2)"></span> 
+				<span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+
+
+	<div class="allt">
+		<div class="column l">
+			<h3 style="color:#3becd8;"><i class="far">&#xf03e;</i></h3>
+			<p>Bilder</p>
+		</div>
+		<div class="column l">
+			<h3 style="color:#3becd8;"><i class="far">&#xf007;</i></h3>
+			<p>Med kund</p>
+		</div>
+		<div class="column l">
+			<h3 style="color:#3becd8;"><i class="fas" >&#xf1bb;</i></h3>
+			<p>Återvunnet natur</p>
+		</div>
+	</div>
+</div>
+
+<div class="footer" >
+	
+	<a style="padding-right:2%;"  href="https://www.facebook.com/profile.php?id=100073069735852"><img src="bilder/fac.png" >Nordic Image UF</a>
+	<p style="margin-left:2%;margin-top:2%;padding-bottom:2%;">NordicImageUF@gmail.com</p>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>
