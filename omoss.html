@@ -29,129 +29,19 @@ body {
   src: url(fonter/Roboto/Roboto-Light.ttf);
 }
 
-.mySlides{
-	display: none
-}
-
-
-.slideshow-container {
-  width: 				100%;
-  position: 			relative;
-  background:			#3becd8;
-}
-
-.slideshow-container img {
-	vertical-align: 	middle;
-	opacity:			0.5;
-}
-
-
-.prev {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  padding: 1%;
-  color: white;
-  font-size: 30px;
-  user-select: none;
-}
-
-.next {
-  right: 0;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  padding: 1%;
-  color: white;
-  font-size: 30px;
-  user-select: none;
-}
-
-.text {
-  color: #181329;
-  font-size: 2vw;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  bottom: 20%;
-  margin:0;
-  padding:0;
-}
-
-.dot {
-	cursor: pointer;
-	height: 20px;
-	width: 20px;
-	background-color: #181329;
-	border-radius: 50%;
-	display: inline-block;
-	transition: background-color 0.3s;
-	position: relative;
-	bottom:40px;
-	transition: 0.3s;
-	margin: 0 5px 0 5px;
-}
-
-.active {
-	background-color:  #3becd8;
-}
-
-.dot:hover {
-	transform:	scale(1.2);
-}
-
-.slide {
-  -webkit-animation-name: slide;
-  -webkit-animation-duration: 1s;
-  animation-name: slide;
-  animation-duration: 1s;
-}
-
-@-webkit-keyframes slide {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes slide {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-.allt{
-	display: flex;
-	width:90%;
-	margin-left:5%;
-	margin-top: 3%;
-}
-
-@media screen and (max-width: 1024px) {
-	.allt {
-		flex-direction:column;
-	}
-}
-
 .column.l {
-	margin:10px;
-	padding:0;
-	text-align: center;
+	margin:0px;
+	padding:0px;
 	background-color: white;
-	flex:60%;
-	transition: transform .4s;
-	transition: 0.4s;
-}
-
-.column.l:hover {
-	letter-spacing:		3px;
-	cursor: 			pointer;
-	transform: 			scale(1.1);
+	width:100%
 }
 
 .column.l p{
 	font-size: 			1.7vw;
 	margin-top:			0;
 	font-family: 		"test4";
-	font-weight: 		bold;
-	color:				#181329;
+	color:				white;
+
 }
 
 .column.l h3{
@@ -190,9 +80,7 @@ body {
 	font-weight: 		bold;
 	margin-bottom:		0.35vw;
 	float:				right;
-	color:				#181329;
-
-	}
+}
 
 .navbar img {
 	height:4vw;
@@ -362,46 +250,16 @@ body {
 			<img src="bilder/Icondark.svg" style="float:left;margin:0.1%;margin-left:10px;"><img src="bilder/Worddark.svg" style="float:left;margin:0.1%;">
 	</div>
 	
-	<div class="slideshow-container">
-				<div class="mySlides slide">
-				<img src="bilder/norrlanddd.jpg" style="width:100%">
-				<div class="text">yoyoyo</div>
-				</div>
-				
-				<div class="mySlides slide">
-				<img src="bilder/sddd.jpg" style="width:100%">
-				<div class="text">yoyoyo</div>
-				</div>
-				
-				<div class="mySlides slide">
-				<img src="bilder/sdd.jpg" style="width:100%">
-				<div class="text">yoyoyo</div>
-				</div>
-
-				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-				<a class="next" onclick="plusSlides(1)">&#10095;</a>
-	</div>
-			<div style="text-align:center">
-				<span class="dot" onclick="currentSlide(1)"></span> 
-				<span class="dot" onclick="currentSlide(2)"></span> 
-				<span class="dot" onclick="currentSlide(3)"></span> 
-			</div>
 
 
-	<div class="allt">
-		<div class="column l">
-			<h3 style="color:#3becd8;"><i class="far">&#xf03e;</i></h3>
-			<p>Bilder</p>
+
+		<div class="column l" style="background: linear-gradient(90deg, #2aa4b3 0%, #e5be7d 60%);">
+			<p style="padding:5%;padding-top:8%;padding-bottom:15%;"><img src="bilder/norrlandd.jpg" style="width:30%;float:right;">Hejhej vi är Nordic image </p>
 		</div>
-		<div class="column l">
-			<h3 style="color:#3becd8;"><i class="far">&#xf007;</i></h3>
-			<p>Med kund</p>
+		<div class="column l" >
+			<p style="padding:5%;color:black;">vi är cooalre än alla nadra</p>
 		</div>
-		<div class="column l">
-			<h3 style="color:#3becd8;"><i class="fas" >&#xf1bb;</i></h3>
-			<p>Återvunnet natur</p>
-		</div>
-	</div>
+	
 </div>
 
 <div class="footer" >
@@ -411,33 +269,19 @@ body {
 </div>
 
 <script>
-var slideIndex = 1;
-showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
 </script>
-
+/*   background-image: linear-gradient(
+        45deg,
+        #CA4246 16.666%, 
+        #E16541 16.666%, 
+        #E16541 33.333%, 
+        #F18F43 33.333%, 
+        #F18F43 50%, 
+        #8B9862 50%, 
+        #8B9862 66.666%, 
+        #476098 66.666%, 
+        #476098 83.333%, 
+        #A7489B 83.333%);*/
 </body>
 </html>
