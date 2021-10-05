@@ -29,94 +29,6 @@ body {
   src: url(fonter/Roboto/Roboto-Light.ttf);
 }
 
-.mySlides{
-	display: none
-}
-
-
-.slideshow-container {
-  width: 				100%;
-  position: 			relative;
-  background:			#3becd8;
-}
-
-.slideshow-container img {
-	vertical-align: 	middle;
-	opacity:			0.5;
-}
-
-
-.prev {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  padding: 1%;
-  color: white;
-  font-size: 30px;
-  user-select: none;
-}
-
-.next {
-  right: 0;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  padding: 1%;
-  color: white;
-  font-size: 30px;
-  user-select: none;
-}
-
-.text {
-  color: #181329;
-  font-size: 2vw;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  bottom: 20%;
-  margin:0;
-  padding:0;
-}
-
-.dot {
-	cursor: pointer;
-	height: 20px;
-	width: 20px;
-	background-color: #181329;
-	border-radius: 50%;
-	display: inline-block;
-	transition: background-color 0.3s;
-	position: relative;
-	bottom:40px;
-	transition: 0.3s;
-	margin: 0 5px 0 5px;
-}
-
-.active {
-	background-color:  #3becd8;
-}
-
-.dot:hover {
-	transform:	scale(1.2);
-}
-
-.slide {
-  -webkit-animation-name: slide;
-  -webkit-animation-duration: 1s;
-  animation-name: slide;
-  animation-duration: 1s;
-}
-
-@-webkit-keyframes slide {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes slide {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
 .allt{
 	display: flex;
 	width:90%;
@@ -154,6 +66,14 @@ body {
 	color:				#181329;
 }
 
+.column.l a{
+	font-size: 			1.7vw;
+	margin-top:			0;
+	font-family: 		"test4";
+	font-weight: 		bold;
+	color:				#181329;
+}	
+	
 .column.l h3{
     font-size:3vw;
 	margin-bottom: 1%;
@@ -211,6 +131,9 @@ body {
 	.column.l p{
 		font-size:	1.7vw;
 	}
+	.column.l a{
+		font-size:	1.7vw;
+	}
 	.footer a {
 		font-size:2vw;
 	}
@@ -234,6 +157,9 @@ body {
 		font-size: 	6vw;
 	}
 	.column.l p{
+		font-size:	3vw;
+	}
+	.column.l a{
 		font-size:	3vw;
 	}
 	.footer a {
@@ -263,6 +189,9 @@ body {
 		font-size: 	8vw;
 	}  	
 	.column.l p{
+		font-size:	4vw;
+	}
+	.column.l a{
 		font-size:	4vw;
 	}
 	.footer a {
