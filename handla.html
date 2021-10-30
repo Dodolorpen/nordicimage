@@ -1,341 +1,107 @@
 <!DOCTYPE html>
-<html lang="se">
+<html lang="en">
 <head>
-<title>Nordic Image UF</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="shortcut icon" type="image/png" href="bilder/Icondark.svg"/>
-<style>
-body {
-	margin: 0;
-	font-family: calibri;
-	background-color: #ffffff;
-}
-
-@font-face {
-  font-family: cinzelbold;
-  src: url(fonter/Cinzel-Bold.ttf);
-}
-
-@font-face {
-  font-family: cinzelregular;
-  src: url(fonter/Cinzel-Regular.ttf);
-}
-
-@font-face {
-  font-family: test4;
-  src: url(fonter/Roboto/Roboto-Light.ttf);
-}
-
-.allt{
-	display: flex;
-	width:90%;
-	margin-left:5%;
-	margin-top: 3%;
-}
-
-@media screen and (max-width: 1024px) {
-	.allt {
-		flex-direction:column;
-	}
-}
-
-.column.l {
-	margin:auto;
-	padding:0;
-	text-align: center;
-	background-color: white;
-	flex:60%;
-	transition: transform .4s;
-	transition: 0.4s;
-}
-
-.column.l:hover {
-	letter-spacing:		3px;
-	cursor: 			pointer;
-	transform: 			scale(1.1);
-}
-
-.column.l p{
-	font-size: 			1.7vw;
-	margin-top:			0;
-	font-family: 		"test4";
-	font-weight: 		bold;
-	color:				#181329;
-}
-
-.column.l a{
-	font-size: 			1.7vw;
-	margin-top:			0;
-	font-family: 		"test4";
-	font-weight: 		bold;
-	color:				#181329;
-}	
-	
-.column.l h3{
-    font-size:3vw;
-	margin-bottom: 1%;
-	margin-top: 1%;
-	font-family: 		"test4";
-}
-
-.navbar {
-	margin:				0;
-	padding:			5px;
-    background-color: 	#ffffff;
-	position: 			sticky;
-	position: 			-webkit-sticky;
-	top: 				0px;
-	opacity:			1;
-	z-index:			1;
-	transition: 		0.4s;
-	width: 				100%;
-	float:				right;
-	color:				#181329;
-	border-bottom: 		2px solid #cccccc;
-}
-
-.navbar a {
-    display:			inline-block;
-    text-align:			center;
-    padding:			0.85vw 1vw;
-    text-decoration:	none;
-    font-size: 			1.5vw;
-	transition: 		0.4s;
-	font-family: 		"cinzelregular";
-	border-right: 		0px solid #444444;
-	margin-top:			0.35vw;
-	font-weight: 		bold;
-	margin-bottom:		0.35vw;
-	float:				right;
-		color:				#181329;
-
-}
-
-.navbar img {
-	height:4vw;
-}
-
-@media screen and (max-width: 1440px) {
-	.navbar a {
-		font-size: 		2vw;
-	}
-	.navbar img {
-		height:4vw;
-	}
-    .column.l h3{
-		font-size: 	4vw;
-	}  	
-	.column.l p{
-		font-size:	1.7vw;
-	}
-	.column.l a{
-		font-size:	1.7vw;
-	}
-	.footer a {
-		font-size:2vw;
-	}
-	.footer p {
-		font-size:2vw;
-	}
-	.footer a img {
-		height: 40px;
-	}
-
-}
-
-@media screen and (max-width: 1024px) {
-	.navbar a {
-		font-size: 	2.5vw;
-	}
-	.navbar img {
-		height:4vw;
-	}
-	.column.l h3{
-		font-size: 	6vw;
-	}
-	.column.l p{
-		font-size:	3vw;
-	}
-	.column.l a{
-		font-size:	3vw;
-	}
-	.footer a {
-		font-size:2.5vw;
-	}
-	.footer p {
-		font-size:2.5vw;
-	}
-	.footer a img {
-		height: 30px;
-	}
-	.dot {
-		height: 15px;
-		width:	15px;
-		bottom:	27.5px;
-	}
-}
-
-@media screen and (max-width: 480px) {
-	.navbar a {
-		font-size: 		3.5vw;
-	}
-	.navbar img {
-		height:5vw;
-	}
-    .column.l h3{
-		font-size: 	8vw;
-	}  	
-	.column.l p{
-		font-size:	4vw;
-	}
-	.column.l a{
-		font-size:	4vw;
-	}
-	.footer a {
-		font-size:4.5vw;
-	}	
-	.footer p {
-		font-size:4.5vw;
-	}
-	.footer a img {
-		height: 25px;
-	}
-	.dot {
-		height: 10px;
-		width:	10px;
-		bottom:	25px;
-	}
-}
-
-.navbar a:hover {
-    color: 				#cccccc;
-	letter-spacing:		3px;
-	cursor: 			pointer;
-}
-
-.all {
-    min-height: calc(100vh);
-}
-
-.footer {
-    background-color: 	#ffffff;
-	font-size: 			1.5vw;
-	padding: 			20px 0 20px 0;
-	margin-top:			3%;
-	z-index:			1;
-	border-top: 		1px solid #444444;
-	max-height:			50px;
-	font-weight:bold;
-	text-align:center;
-}
-
-.footer p{
-    color:				black;
-	font-family: 		"test4";
-	transition: 		0.3s;
-	padding: 0px;
-	margin: 0px;
-	display: inline-block;
-	padding-top:0;
-	margin-top:0;
-}
-
-.footer img{
-	width: 				auto;
-	height: 			50px;
-	vertical-align:		middle;
-	margin-right:		1%;
-}
-
-.footer a {
-	padding-right:10px;
-	padding-left:10px;
-	color:black;
-	text-decoration: 	none;
-	transition: 		0.3s;
-	border-right:1px solid #444444;
-	font-family: "test4";
-}
-
-@media screen and (max-width: 480px) {
-	.footer a {
-	border-right:0px solid #444444;
-	}	
-
-}
-
-.footer p:hover {
-	letter-spacing:		1px;
-}
-
-.footer a:hover {
-	letter-spacing:		1px;
-}
-</style>
-
-<script src="https://kit.fontawesome.com/1f4481692f.js" crossorigin="anonymous"></script>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" type="image/png" href="/Iconwhite.svg"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
-<div class="all">
+    <div class="all">
+    <div class="navbar">
+        <header>
+            <div class="a"><img src="/Iconwhite.svg" alt="icon" ><img src="/Wordwhite.svg" alt="nordicimageuf" id="word"></div>
 
-	<div class="navbar" id="navbar">
-		    <a href="omoss.html" >Om oss <i class="fas">&#xf0c0;</i></a>
-			<a href="handla.html" style="color:#3becd8;">Produkter <i class="fas">&#xf49e;</i></a>
-			<a href="index.html" >Hem <i class="fas">&#xf015;</i></a>
-			<img src="bilder/Icondark.svg" style="float:left;margin:0.1%;margin-left:10px;"><img src="bilder/Worddark.svg" style="float:left;margin:0.1%;">
-	</div>
-	
-	
 
-	<div class="allt">
+            <nav>
+                <ul>
+                    <li ><a href="index.html" >Hem</a></li>
+                    <li><a href="handla.html" style="color:#3becd8">Handla</a></li>
+                    <li><a href="omoss.html" >Om oss</a></li>
+                </ul>
+            </nav>
 
-		<div class="column l">
-			<a href="https://form.jotform.com/212775691351359" target="_blank" style="text-decoration:none;color:#181329;margin-top:3vw;"><h3 style="color:#3becd8;"><i class="fas">&#xf07a;</i></h3></a>
-			<a href="https://form.jotform.com/212775691351359" target="_blank" style="text-decoration:none;color:#181329;">Beställ nu</a>
-		</div>
+        </header>
+    </div>
 
-	</div>
+    <div class="waves">
+        <img src="/purple.svg" alt="" >
+    </div>
+
+
+    <div class="hero">
+        <div class="text">
+            <h1>Vi bränner in valfritt motiv i tavla åt dig</h1>
+            <img src="/streck.png" alt="">
+        </div>
+
+        <div class="slideshow-container" >
+							
+            <div class="mySlides slide">
+                <img src="/portraitsmall.png"  animate__animated animate__fadeInLeft" >
+                <!--<div class="text1">yoyoyo</div>-->
+            </div>
+            
+            <div class="mySlides slide">
+                <img src="/portraitbig.png"  class="animate__animated animate__fadeInLeft">
+                <!--<div class="text1">yoyoyo</div>-->
+            </div>
+            
+            <div class="mySlides slide">
+                <img src="/portraitsmall.png"  class="animate__animated animate__fadeInLeft">
+                <!--<div class="text1">yoyoyo</div>-->
+
+            </div>
+    
+            <!--<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>-->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)" style="margin-left:-40px;"></span> 
+                <span class="dot" onclick="currentSlide(2)"style="margin-left:0px;"></span> 
+                <span class="dot" onclick="currentSlide(3)"style="margin-left:40px;"></span> 
+            </div>
+            
+        </div>
+    </div>
+
+
+ 
+
+
 </div>
+    <!--<img src="/whitepurple.svg" alt="" style="position:absolute;bottom:80px;width:100%;z-index: -1;">-->
+    <div class="footer">
 
-<div class="footer" >
-	
-	<a style="padding-right:2%;border-right:1px solid #444444;"  href="https://www.facebook.com/Nordic-Image-UF-100907925711917" target="blank"><img src="bilder/fac.png" >Nordic Image UF</a>
-	<a style="padding-right:2%;"  href="https://www.instagram.com/nordicimageuf/" target="blank" ><img src="bilder/inst.png" >Nordic Image UF</a>
-	<p style="padding-left:2%;margin-top:0%;padding-bottom:15px;">NordicImageUF@gmail.com</p>
-</div>
+        <div class="header1">            
+           
+                    <a href="https://www.facebook.com/Nordic-Image-UF-100907925711917" target="_blank"><img src="/facebook.png" alt="facebook"></a>
+                    <a href="https://www.instagram.com/nordicimageuf/" target="_blank"><img src="/instagram.png" alt="instagram"></a>
+            
+        </div>
+        <div class="header2">            
+            <a style="cursor: default;"><img src="/mail.png" alt="mail"></a>
+            <a style="cursor: default;"><img src="/telefon.png" alt="telefon"></a>
+        </div>
+    </div>
 
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
+    <div class="footer1">
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+        <div class="header1">            
+           
+                    <a href="https://www.facebook.com/Nordic-Image-UF-100907925711917" target="_blank"><img src="/facebook1.png" alt="facebook" style="padding-top: 2.5em;"></a>
+                    <a href="https://www.instagram.com/nordicimageuf/" target="_blank"><img src="/instagram1.png" alt="instagram"></a>
+            
+        </div>
+        <div class="header2">            
+            <a style="cursor: default;"><img src="/mail.png" alt="mail"></a>
+            <a style="cursor: default;"><img src="/telefon1.png" alt="telefon"></a>
+        </div>
+    </div>
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
-
+    <script src="java.js"></script>
 </body>
 </html>
