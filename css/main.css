@@ -125,6 +125,9 @@ a {
 .hero .text {
   max-width: 20%;
   margin-top: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero .text h1 {
@@ -152,8 +155,8 @@ a {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  -webkit-box-shadow: 10px 10px 5px #aaaaaa;
-          box-shadow: 10px 10px 5px #aaaaaa;
+  -webkit-box-shadow: 10px 10px 15px #aaaaaa;
+          box-shadow: 10px 10px 15px #aaaaaa;
   max-width: 100%;
 }
 
@@ -308,6 +311,7 @@ a {
   }
   .hero .text {
     min-width: 50%;
+    font-size: 1.2em;
   }
   .hero .slideshow-container {
     width: 100%;
@@ -318,13 +322,6 @@ a {
   .navbar header ul li a {
     margin: 0 2em;
   }
-  .text {
-    font-size: .7em;
-    min-width: 40%;
-  }
-  .slideshow-container {
-    width: 60%;
-  }
 }
 
 @media screen and (max-width: 750px) {
@@ -334,6 +331,9 @@ a {
   #word {
     display: none;
   }
+  .hero .text {
+    min-width: 70%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -342,6 +342,9 @@ a {
   }
   .navbar header ul li a {
     margin: 0 1em;
+  }
+  .hero .text {
+    min-width: 80%;
   }
   .footer1 .header1 img {
     width: 90%;
@@ -359,6 +362,9 @@ a {
   }
   .navbar header ul li a {
     margin: 0 .5em;
+  }
+  .hero .text {
+    min-width: 70%;
   }
 }
 /*# sourceMappingURL=main.css.map */
