@@ -294,8 +294,6 @@ a {
             }
         } 
     }
-
-
 }
 @media screen and (max-width: 750px) {
     .navbar{
@@ -326,8 +324,13 @@ a {
         } 
     }
     .hero {
+        margin-left: 5%;
+        width:90%;
         .text {
             min-width:80%;
+            h1 {
+                font-size:1.5em;
+            }
         }
     }
     .footer1 {  
@@ -347,6 +350,7 @@ a {
 }
 @media screen and (max-width: 450px) {
     .navbar{
+        font-size: .5em;
         header {
             img{
                 margin-right:0.1em;
@@ -362,7 +366,10 @@ a {
     }
     .hero {
         .text {
-            min-width:70%;
+            min-width:90%;
+            h1 {
+                font-size:1.1em;
+            }
         }
     }
 }
