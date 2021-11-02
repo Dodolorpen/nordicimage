@@ -350,7 +350,7 @@ a {
 }
 @media screen and (max-width: 450px) {
     .navbar{
-        font-size: .5em;
+        font-size: .8em;
         header {
             img{
                 margin-right:0.1em;
@@ -371,5 +371,10 @@ a {
                 font-size:1.1em;
             }
         }
+    }
+}
+@media screen and (max-width: 350px) {
+    .navbar{
+        font-size: .7em;
     }
 }
