@@ -22,6 +22,11 @@ a {
   text-decoration: none;
 }
 
+.zf-submitColor:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .all {
   min-height: calc(100vh);
 }

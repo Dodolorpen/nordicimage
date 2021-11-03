@@ -84,92 +84,29 @@ a {
         img {
            width:90%; 
         }
-    
     }
-    /*h1::before {
-        content:"";
-        position: absolute;
-        width:75%;
-        height: 12%;
-        bottom:-10px;
-        background-image: url("/streck.svg");
-        background-size: cover;
-    }*/
-    
-    .mySlides{
-        display: none
-    }
-    
-    .slideshow-container {
-      position: 			relative;
-      width:80%;
-      margin-top:5%;
+}
 
-    }
-    
-    .slideshow-container img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        box-shadow: 10px 10px 15px #aaaaaa;
-        max-width: 100%;        
-    }
-
-    
-    .dot {
-        cursor: pointer;
-        height: 20px;
-        width: 20px;
-        background-color: #181329;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.3s;
-        position: absolute;
-        bottom:40px;
-        transition: 0.3s;
-    }
-    
-    .active {
-        background-color:  #3becd8;
-    }
-    
-    .dot:hover {
-        transform:	scale(1.2);
-    }
-   
-    /*.text1 {
-      color: #181329;
-      font-size: 2vw;
-      position: absolute;
-      text-align: center;
-      width: 100%;
-      bottom: 20%;
-      margin:0;
-      padding:0;
-      font-family:"Poppins";
-    }
-    
-    .prev {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      padding: 1%;
-      color:#181329;
-      font-size: 30px;
-      user-select: none;
-    }
-    
-    .next {
-      right: 0;
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      padding: 1%;
-      color: #181329;
-      font-size: 30px;
-      user-select: none;
-    }
-    */
+.bild {
+    position: relative;
+}
+.image {
+    display: block;
+}
+.titel {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 2em;
+    padding: 1% 0;
+    text-align: center;
+}
+.bild:hover .titel {
+	opacity: 1;
 }
 
 .all {

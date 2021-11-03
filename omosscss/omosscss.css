@@ -78,48 +78,6 @@ a {
   display: flex;
   margin-left: 10%;
   width: 80%;
-  /*h1::before {
-        content:"";
-        position: absolute;
-        width:75%;
-        height: 12%;
-        bottom:-10px;
-        background-image: url("/streck.svg");
-        background-size: cover;
-    }*/
-  /*.text1 {
-      color: #181329;
-      font-size: 2vw;
-      position: absolute;
-      text-align: center;
-      width: 100%;
-      bottom: 20%;
-      margin:0;
-      padding:0;
-      font-family:"Poppins";
-    }
-    
-    .prev {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      padding: 1%;
-      color:#181329;
-      font-size: 30px;
-      user-select: none;
-    }
-    
-    .next {
-      right: 0;
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      padding: 1%;
-      color: #181329;
-      font-size: 30px;
-      user-select: none;
-    }
-    */
 }
 
 .hero .text {
@@ -141,47 +99,30 @@ a {
   width: 90%;
 }
 
-.hero .mySlides {
-  display: none;
-}
-
-.hero .slideshow-container {
+.bild {
   position: relative;
-  width: 80%;
-  margin-top: 5%;
 }
 
-.hero .slideshow-container img {
+.image {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  -webkit-box-shadow: 10px 10px 15px #aaaaaa;
-          box-shadow: 10px 10px 15px #aaaaaa;
-  max-width: 100%;
 }
 
-.hero .dot {
-  cursor: pointer;
-  height: 20px;
-  width: 20px;
-  background-color: #181329;
-  border-radius: 50%;
-  display: inline-block;
-  -webkit-transition: background-color 0.3s;
-  transition: background-color 0.3s;
+.titel {
   position: absolute;
-  bottom: 40px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 2em;
+  padding: 1% 0;
+  text-align: center;
 }
 
-.hero .active {
-  background-color: #3becd8;
-}
-
-.hero .dot:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+.bild:hover .titel {
+  opacity: 1;
 }
 
 .all {
