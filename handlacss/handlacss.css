@@ -281,6 +281,14 @@ a {
   }
 }
 
+#welcomeDiv {
+  display: none;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  font-size: 3em;
+}
+
 @media screen and (max-width: 450px) {
   .navbar {
     font-size: .8em;
@@ -296,6 +304,12 @@ a {
   }
   .hero .text h1 {
     font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #welcomeDiv {
+    font-size: 2em;
   }
 }
 
