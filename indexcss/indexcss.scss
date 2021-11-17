@@ -158,6 +158,13 @@ a {
 
 
 
+@media screen and (max-width: 1750px) {
+    .hero {
+        .text {
+            min-width:27%;
+        }
+    }
+}
 @media screen and (max-width: 1350px) {
     .text {
         font-size: .8em;
@@ -206,6 +213,11 @@ a {
         }
     
     }
+    .hero {
+        .text {
+            min-width:70%;
+        }
+    }
 
 }
 @media screen and (max-width: 750px) {
@@ -215,11 +227,7 @@ a {
     #word{
         display:none;
     }
-    .hero {
-        .text {
-            min-width:70%;
-        }
-    }
+
 }
 @media screen and (max-width: 600px) {
     .navbar{
