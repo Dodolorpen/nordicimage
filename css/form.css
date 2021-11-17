@@ -101,17 +101,11 @@ ol, ul {
 	-moz-border-radius:2px;
 	border-radius:2px;
 }
-
 @media screen and (max-width: 1350px) {
     .zf-templateWidth { 
 		width:100%;
 	}
 }
-
-@media screen and (max-width: 1000px) {
-    
-}
-
 .zf-tempContDiv input[type="text"], .zf-tempContDiv textarea, .zf-tempContDiv .zf-pdfTextArea {
 	background:#fff;	
 	border:1px solid #e5e5e5;	
@@ -809,7 +803,7 @@ ol, ul {
 .zf-descFld  blockquote.zquote span.txt {
     -moz-user-focus: ignore;
     -moz-user-input: disabled;
-    /*-moz-user-select: none;*/
+    -moz-user-select: none;
     color: #058BC2;
     float: left;
     font: bold 50px Arial,Helvetica,sans-serif;

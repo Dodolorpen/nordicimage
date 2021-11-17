@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nordic Image UF</title>
     <link rel="shortcut icon" type="image/png" href="/Iconwhite.svg"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="css/form.css" rel="stylesheet" type="text/css"><script src="formjs/validation.js"></script>
@@ -45,29 +45,44 @@
             
             <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
 
-            <div class="zf-templateWidth" id="Hero_1"><form action='https://forms.zohopublic.eu/daniellund7/form/NordicImagebestllning/formperma/KKVKMHY8WWLWQphFwrYILjf9lBVq1-B90r73lGcaFF8/htmlRecords/submit' name='form' method='POST' onSubmit='javascript:document.charset="UTF-8"; return zf_ValidateAndSubmit();' accept-charset='UTF-8' enctype='multipart/form-data' id='form' target="dummyframe"><input type="hidden" name="zf_referrer_name" value=""><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
+            <div class="zf-templateWidth" id="Hero_1"><form action='https://forms.zohopublic.eu/daniellund7/form/NordicImagebestllning1/formperma/Cqjrm3ENdqoRaf6i2jGS4i6lPcYUAUzsvsLE959xTvM/htmlRecords/submit' name='form' method='POST' onSubmit='javascript:document.charset="UTF-8"; return zf_ValidateAndSubmit();' accept-charset='UTF-8' enctype='multipart/form-data' id='form' target="dummyframe"><input type="hidden" name="zf_referrer_name" value=""><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
                 <input type="hidden" name="zf_redirect_url" value=""><!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
                 <input type="hidden" name="zc_gad" value=""><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
-                <div class="zf-templateWrapper" ><!---------template Header Starts Here---------->
-                <ul class="zf-tempHeadBdr"><li class="zf-tempHeadContBdr"><h2 class="zf-frmTitle" style="text-align:center;"><em >Nordic Image beställning</em></h2>
+                <div class="zf-templateWrapper"><!---------template Header Starts Here---------->
+                <ul class="zf-tempHeadBdr"><li class="zf-tempHeadContBdr"><h2 class="zf-frmTitle" style="text-align:center;"><em>Nordic Image beställning</em></h2>
                 <p class="zf-frmDesc"></p>
                 <div class="zf-clearBoth"></div></li></ul><!---------template Header Ends Here---------->
                 <!---------template Container Starts Here---------->
                 <div class="zf-subContWrap zf-topAlign"><ul>
-                <!---------Image Upload Starts Here---------->
-                 
-                <li class="zf-tempFrmWrapper">
-                    <label class="zf-labelName">Bild</label>
-                        <div class="zf-tempContDiv">
-                            <input type="file" accept="image/*" name="ImageUpload"  checktype="c1" id="file"  onchange="loadFile(event)" style="width:100%;"/>
-                            <p id="ImageUpload_error" class="zf-errorMessage" style="display:none;">Choose any file for this field.</p>
-                            <img id="output" style="width:50%;margin-right:50%;margin-top:1%;" />
-                            <p class="zf-instruction"> Ladda upp bild som vill ha en tavla på. Om du vill ha text till bilden kan du förklara det i beskrivningen längst ned. Om du inte vill ha en bild alls, utan endast text skriver du även det i beskrivningen.</p>
-                        </div>
-                    <div class="zf-clearBoth"></div>
-                </li>
-                
-                
+                <!---------Description Starts Here---------->  
+                <li class="zf-tempFrmWrapper zf-note"><p class="zf-instruction"> Betalning sker efter att du har beställt. Vi kommer då att skicka en bekräftelse på din beställning och även fråga efter betalning innan vi börjar jobba på din unika tavla.</p>
+                <div class="zf-clearBoth"></div></li><!---------Description Ends Here---------->  
+                <!---------Radio Starts Here---------->    
+                <li class="zf-radio zf-tempFrmWrapper zf-sideBySide" style="font-size:13px"><label class="zf-labelName">Motiv på din tavla
+                <em class="zf-important">*</em>
+                </label>
+                <div class="zf-tempContDiv"><div class="zf-overflow">
+                <span class="zf-multiAttType"> 
+                <input class="zf-radioBtnType" type="radio" id="Radio_1" name="Radio" checktype="c1" value="Bild" onclick="showPicture(1)">
+                <label for="Radio_1" class="zf-radioChoice">Bild</label> </span>
+                <span class="zf-multiAttType"> 
+                <input class="zf-radioBtnType" type="radio" id="Radio_2" name="Radio" checktype="c1" value="Text" onclick="showPicture(2)">
+                <label for="Radio_2" class="zf-radioChoice">Text</label> </span>
+                <span class="zf-multiAttType"> 
+                <input class="zf-radioBtnType" type="radio" id="Radio_3" name="Radio" checktype="c1" value="Bild&#x20;med&#x20;text" onclick="showPicture(3)">
+                <label for="Radio_3" class="zf-radioChoice">Bild&#x20;med&#x20;text</label> </span>
+                <div class="zf-clearBoth"></div></div><p id="Radio_error" class="zf-errorMessage" style="display:none;">Ogiltigt värde</p>
+                </div><div class="zf-clearBoth"></div></li><!---------Radio Ends Here---------->    
+                <!--Image Upload-->
+                <!---------Image Upload Starts Here---------->  
+                <li class="zf-tempFrmWrapper" id="bild1" style="display:none"><label class="zf-labelName">Ladda upp bild
+                </label>
+                <div class="zf-tempContDiv">
+                <input type="file" accept="image/*" name="ImageUpload" checktype="c1"  id="file" onchange="loadFile(event)" style="width:100%;"/>
+                <p id="ImageUpload_error" class="zf-errorMessage" style="display:none;">Choose any file for this field.</p>
+                <img id="output" style="width:50%;margin-right:50%;margin-top:1%;" />
+    
+            </div><div class="zf-clearBoth"></div></li>
                 <script>
                     var loadFile = function(event) {
                         var image = document.getElementById('output');
@@ -75,6 +90,39 @@
                     };
                 </script>
                 <!---------Image Upload Ends Here---------->  
+                <!---------Multiple Line Starts Here---------->
+                <li class="zf-tempFrmWrapper zf-small" id="text1" style="display:none;"><label class="zf-labelName">Text 
+                </label>
+                <div class="zf-tempContDiv"><span> <textarea name="MultiLine2" checktype="c1" maxlength="65535" style="width:100%;"></textarea> </span><p id="MultiLine2_error" class="zf-errorMessage" style="display:none;">Ogiltigt värde</p>
+                </div><div class="zf-clearBoth"></div></li><!---------Multiple Line Ends Here---------->
+                <!---------Radio Starts Here---------->    
+                <li class="zf-radio zf-tempFrmWrapper zf-oneColumns" id="text2" style="display:none"><label class="zf-labelName">Om det finns en bakgrund på bilden, vill du att vi ska ta bort den?
+                </label>
+                <div class="zf-tempContDiv"><div class="zf-overflow">
+                <span class="zf-multiAttType"> 
+                <input class="zf-radioBtnType" type="radio" id="Radio2_1" name="Radio2" checktype="c1" value="Ja">
+                <label for="Radio2_1" class="zf-radioChoice">Ja</label> </span>
+                <span class="zf-multiAttType"> 
+                <input class="zf-radioBtnType" type="radio" id="Radio2_2" name="Radio2" checktype="c1" value="Nej">
+                <label for="Radio2_2" class="zf-radioChoice">Nej</label> </span>
+                <div class="zf-clearBoth"></div></div><p id="Radio2_error" class="zf-errorMessage" style="display:none;">Ogiltigt värde</p>
+                </div><div class="zf-clearBoth"></div></li><!---------Radio Ends Here---------->    
+                <!---------Radio Starts Here---------->    
+                <li class="zf-radio zf-tempFrmWrapper zf-oneColumns"><label class="zf-labelName">Storlek
+                <em class="zf-important">*</em>
+                </label>
+                <div class="zf-tempContDiv"><div class="zf-overflow">
+                <span class="zf-multiAttType"> 
+                <input class="zf-radioBtnType" type="radio" id="Radio1_1" name="Radio1" checktype="c1" value="Liten&#x20;-&#x20;A5" onclick="showText(1)">
+                <label for="Radio1_1" class="zf-radioChoice">Liten&#x20;-&#x20;A5</label> </span>
+                <span class="zf-multiAttType"> 
+                <input class="zf-radioBtnType" type="radio" id="Radio1_2" name="Radio1" checktype="c1" value="Mellan&#x20;-&#x20;A4" onclick="showText(2)">
+                <label for="Radio1_2" class="zf-radioChoice">Mellan&#x20;-&#x20;A4</label> </span>
+                <span class="zf-multiAttType"> 
+                <input class="zf-radioBtnType" type="radio" id="Radio1_3" name="Radio1" checktype="c1" value="Stor&#x20;-&#x20;A3" onclick="showText(3)">
+                <label for="Radio1_3" class="zf-radioChoice">Stor&#x20;-&#x20;A3</label> </span>
+                <div class="zf-clearBoth"></div></div><p id="Radio1_error" class="zf-errorMessage" style="display:none;">Ogiltigt värde</p>
+                </div><div class="zf-clearBoth"></div></li><!---------Radio Ends Here---------->    
                 <!---------Name Starts Here----------> 
                 <li class="zf-tempFrmWrapper zf-name zf-namemedium"><label class="zf-labelName">Namn
                 <em class="zf-important">*</em>
@@ -91,6 +139,23 @@
                  </span> </span>
                 <div class="zf-clearBoth"></div></div><p id="Name_error" class="zf-errorMessage" style="display:none;">Ogiltigt värde</p>
                 </div><div class="zf-clearBoth"></div></li><!---------Name Ends Here----------> 
+                <!--address-->
+                <!---------Address Starts Here---------->  
+                <li class="zf-tempFrmWrapper zf-address zf-addrlarge " ><label class="zf-labelName">Address
+                <em class="zf-important">*</em>
+                </label>
+                <div class="zf-tempContDiv zf-address"><div class="zf-addrCont">
+                <span class="zf-addOne"> <input type="text" maxlength="255" name="Address_AddressLine1" checktype="c1"/><label>Gatuadress</label> </span>
+                <span class="zf-flLeft zf-addtwo"> <input type="text" maxlength="255" name="Address_City" checktype="c1"/><label>Stad</label> </span>
+                <span class="zf-flLeft zf-addtwo"> <input type="text" maxlength="255" name="Address_ZipCode" checktype="c1"/><label>Postnummer</label> </span>
+                <div class="zf-clearBoth"></div><p id="Address_error" class="zf-errorMessage" style="display:none;">Ogiltigt värde</p>
+                </div></div><div class="zf-eclearBoth"></div></li><!---------Address Ends Here---------->
+                <!---------Email Starts Here---------->  
+                <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName">Mailadress 
+                <em class="zf-important">*</em>
+                </label>
+                <div class="zf-tempContDiv"><span> <input fieldType=9  type="text" maxlength="255" name="Email" checktype="c5" value=""/></span> <p id="Email_error" class="zf-errorMessage" style="display:none;">Ogiltigt värde</p>
+                </div><div class="zf-clearBoth"></div></li><!---------Email Ends Here---------->  
                 <!---------Phone Starts Here----------> 
                 <li  class="zf-tempFrmWrapper zf-small"><label class="zf-labelName">Telefonnummer
                 <em class="zf-important">*</em>
@@ -102,53 +167,17 @@
                 <label>Number</label> </span>
                 <div class="zf-clearBoth"></div></div><p id="PhoneNumber_error" class="zf-errorMessage" style="display:none;">Ogiltigt värde</p>
                 </div><div class="zf-clearBoth"></div></li><!---------Phone Ends Here----------> 
-                <!--address-->
-                <!---------Address Starts Here---------->  
-                <li class="zf-tempFrmWrapper zf-address zf-addrlarge " ><label class="zf-labelName">Address
-                <em class="zf-important">*</em>
-                </label>
-                <div class="zf-tempContDiv zf-address"><div class="zf-addrCont">
-                <span class="zf-addOne"> <input type="text" maxlength="255" name="Address_AddressLine1" checktype="c1"/><label>Adress</label> </span>
-                <span class="zf-flLeft zf-addtwo"> <input type="text" maxlength="255" name="Address_City" checktype="c1"/><label>Stad</label> </span>
-                <span class="zf-flLeft zf-addtwo"> <input type="text" maxlength="255" name="Address_ZipCode" checktype="c1"/><label>Postnummer</label> </span>
-                <div class="zf-clearBoth"></div><p id="Address_error" class="zf-errorMessage" style="display:none;">Ogiltigt värde</p>
-                </div></div><div class="zf-eclearBoth"></div></li><!---------Address Ends Here---------->
-                <!---------Email Starts Here---------->  
-                <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName">Mailadress 
-                <em class="zf-important">*</em>
-                </label>
-                <div class="zf-tempContDiv"><span> <input fieldType=9  type="text" maxlength="255" name="Email" checktype="c5" value=""/></span> <p id="Email_error" class="zf-errorMessage" style="display:none;">Ogiltigt värde</p>
-                </div><div class="zf-clearBoth"></div></li><!---------Email Ends Here---------->  
-                <!---------Radio Starts Here---------->    
-                <li class="zf-radio zf-tempFrmWrapper zf-oneColumns"><label class="zf-labelName">Storlek
-                <em class="zf-important">*</em>
-                </label>
-                <div class="zf-tempContDiv"><div class="zf-overflow">
-                <span class="zf-multiAttType"> 
-                <input class="zf-radioBtnType" type="radio" id="Dropdown_1" name="Dropdown" checktype="c1" value="Lite&#x20;-&#x20;A5" onclick="showText(1)">
-                <label for="Dropdown_1" class="zf-radioChoice">Liten&#x20;-&#x20;A5</label> </span>
-                <span class="zf-multiAttType"> 
-                <input class="zf-radioBtnType" type="radio" id="Dropdown_2" name="Dropdown" checktype="c1" value="Mellan&#x20;-&#x20;A4" onclick="showText(2)">
-                <label for="Dropdown_2" class="zf-radioChoice">Mellan&#x20;-&#x20;A4</label> </span>
-                <span class="zf-multiAttType"> 
-                <input class="zf-radioBtnType" type="radio" id="Dropdown_3" name="Dropdown" checktype="c1" value="Stor&#x20;-&#x20;A3" onclick="showText(3)">
-                <label for="Dropdown_3" class="zf-radioChoice">Stor&#x20;-&#x20;A3</label> </span>
-                <div class="zf-clearBoth"></div></div><p id="Dropdown_error" class="zf-errorMessage" style="display:none;">Ogiltigt värde</p>
-                </div><div class="zf-clearBoth"></div></li><!---------Radio Ends Here---------->    
                 <!---------Multiple Line Starts Here---------->
-                <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName">Beskrivning 
+                <li class="zf-tempFrmWrapper zf-large"><label class="zf-labelName">Beskrivning 
                 </label>
-                <div class="zf-tempContDiv"><span> <textarea name="MultiLine" checktype="c1" maxlength="65535" style="width:100%;"></textarea> </span><p id="MultiLine_error" class="zf-errorMessage" style="display:none;">Ogiltigt värde</p>
-                <p class="zf-instruction">Här kan du förklara om du vill ha en text till bilden, eller om du bara vill ha text. DU kan även berätta hur du vill att vi kontaktar dig om vi behöver det.</p>
+                <div class="zf-tempContDiv"><span> <textarea name="MultiLine1" checktype="c1" maxlength="65535"></textarea> </span><p id="MultiLine1_error" class="zf-errorMessage" style="display:none;">Ogiltigt värde</p>
+                <p class="zf-instruction">Här kan du skriva övriga önskemål, exempelvis hur du vill att vi ska kontakta dig</p>
                 </div><div class="zf-clearBoth"></div></li><!---------Multiple Line Ends Here---------->
-                <p id="text" style="text-align: center;" >0kr</p>
-            </ul></div><!---------template Container Starts Here---------->
-
-                <ul><li class="zf-fmFooter"><button class="zf-submitColor" onclick="showDiv()" style="background:#3becd8;font-family: Poppins;font-size: 25px;border:unset;border-radius: 25px;transition: transform .3s;">Beställ</button></li></ul> </div><!-- 'zf-templateWrapper' ends --></form></div><!-- 'zf-templateWidth' ends -->
-
-                <script type="text/javascript">var zf_DateRegex = new RegExp("^(([0][1-9])|([1-2][0-9])|([3][0-1]))[-]([0][1-9]|1[012])[-](?:(?:19|20)[0-9]{2})$");
-                var zf_MandArray = [ "Name_First", "Name_Last", "PhoneNumber_countrycode", "Address_AddressLine1", "Address_City", "Address_ZipCode", "Email", "Dropdown"]; 
-                var zf_FieldArray = [ "ImageUpload", "Name_First", "Name_Last", "PhoneNumber_countrycode", "Address_AddressLine1", "Address_City", "Address_ZipCode", "Email", "Dropdown", "MultiLine"]; 
+                </ul></div><!---------template Container Starts Here---------->
+                <ul><li class="zf-fmFooter"><button class="zf-submitColor" onclick="showDiv()" style="background:#3becd8;font-family: Poppins;font-size: 25px;border:unset;border-radius: 25px;transition: transform .3s;">Beställ</button></li></ul></div><!-- 'zf-templateWrapper' ends --></form></div><!-- 'zf-templateWidth' ends -->
+                <script type="text/javascript">var zf_DateRegex = new RegExp("^(([0][1-9])|([1-2][0-9])|([3][0-1]))[-](Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)[-](?:(?:19|20)[0-9]{2})$");
+                var zf_MandArray = [ "Radio", "Radio1", "Name_First", "Name_Last", "Address_AddressLine1", "Address_City", "Address_ZipCode", "Email", "PhoneNumber_countrycode"]; 
+                var zf_FieldArray = [ "Radio", "ImageUpload", "MultiLine2", "Radio2", "Radio1", "Name_First", "Name_Last", "Address_AddressLine1", "Address_City", "Address_ZipCode", "Email", "PhoneNumber_countrycode", "MultiLine1"]; 
                 var isSalesIQIntegrationEnabled = false;
                 var salesIQFieldsArray = [];</script>
                 <script>
@@ -211,34 +240,40 @@
         return;
         }   
     </script>
+    <script>
+    function showPicture(num){
+        if (num==1) {
+            document.getElementById('bild1').style.display='block';
+            document.getElementById('text1').style.display='none';
+            document.getElementById('text2').style.display='block';
+        }
+        else if (num==2){
+            document.getElementById('bild1').style.display='none';
+            document.getElementById('text1').style.display='block';
+            document.getElementById('text2').style.display='none';
+
+        }
+        else if ( num ==3){
+            document.getElementById('bild1').style.display='block';
+            document.getElementById('text1').style.display='block';
+            document.getElementById('text2').style.display='block';
+
+        }
+        else {
+            document.getElementById('text').style.display='none';
+
+        }
+        return;
+        }   
+    </script>
 
 </div>
-    <div class="footer">
-        <div class="header1">            
-           
-                    <a href="https://www.facebook.com/Nordic-Image-UF-100907925711917" target="_blank"><img src="/facebook.png" alt="facebook"></a>
-                    <a href="https://www.instagram.com/nordicimageuf/" target="_blank"><img src="/instagram.png" alt="instagram"></a>
-            
-        </div>
-        <div class="header2">            
-            <a style="cursor: default;"><img src="/mail.png" alt="mail"></a>
-            <a style="cursor: default;"><img src="/telefon.png" alt="telefon"></a>
-        </div>
-    </div>
+<div class="footer">
 
-    <div class="footer1">
-
-        <div class="header1">            
-           
-                    <a href="https://www.facebook.com/Nordic-Image-UF-100907925711917" target="_blank"><img src="/facebook1.png" alt="facebook" style="padding-top: 2.5em;"></a>
-                    <a href="https://www.instagram.com/nordicimageuf/" target="_blank"><img src="/instagram1.png" alt="instagram"></a>
-            
-        </div>
-        <div class="header2">            
-            <a style="cursor: default;"><img src="/mail.png" alt="mail"></a>
-            <a style="cursor: default;"><img src="/telefon1.png" alt="telefon"></a>
-        </div>
-    </div>
+    <a href="https://www.facebook.com/Nordic-Image-UF-100907925711917" target="_blank"><img src="/facebook.svg" alt="facebook"></a>
+    <a href="https://www.instagram.com/nordicimageuf/" target="_blank"><img src="/instagram.svg" alt="instagram"></a>
+    <a style="cursor: default;"><img src="/mail.svg" alt="mail"></a>
+</div>
 
 
 </body>
