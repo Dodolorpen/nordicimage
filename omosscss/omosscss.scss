@@ -69,7 +69,7 @@ a {
     margin-left: 10%;
     width:80%;
     .text {
-        max-width:20%;
+        max-width:50%;
         margin-top:5%;
         display:block;
         margin-left:auto;
@@ -95,7 +95,6 @@ a {
     }
 }
 
-
 .titel {
     position: absolute;
     bottom: 0;
@@ -117,7 +116,7 @@ a {
 }
 
 .footer {
-    background-image:url("/footee.png");
+    background-image:url("/footer.png");
     background-size: cover;
     width:100%;
     display:flex;
