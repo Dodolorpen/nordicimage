@@ -101,11 +101,7 @@ ol, ul {
 	-moz-border-radius:2px;
 	border-radius:2px;
 }
-@media screen and (max-width: 1350px) {
-    .zf-templateWidth { 
-		width:100%;
-	}
-}
+
 .zf-tempContDiv input[type="text"], .zf-tempContDiv textarea, .zf-tempContDiv .zf-pdfTextArea {
 	background:#fff;	
 	border:1px solid #e5e5e5;	
